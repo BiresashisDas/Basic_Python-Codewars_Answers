@@ -89,3 +89,45 @@ def count_sheeps(sheep):
   # TODO May the force be with you
     return sheep.count(True)
 `````
+
+## *Convert number to reversed array of digits*
+
+**6. Given a random non-negative number, you have to return the digits of this number within an array in reverse order.**
+
+***Example(Input => Output):***
+>35231 => [1,3,2,5,3]
+>
+>0 => [0]
+
+***Ans:-***
+
+```python
+def digitize(n):
+    
+    n = list(str(n))
+    n.reverse()
+    return [int(x) for x in n]
+```
+
+# A Needle in the Haystack
+
+**7. Can you find the needle in the haystack?**
+
+**Write a function <code>findNeedle()</code> that takes an <code>array</code> full of junk but containing one <code>"needle"</code>**
+
+**After your function finds the needle it should return a message (as a string) that says:**
+
+**<code>"found the needle at position "</code> plus the <code>index</code> it found the needle, so:**
+
+**Example(Input --> Output)**
+
+<code>["hay", "junk", "hay", "hay", "moreJunk", "needle", "randomJunk"] --> "found the needle at position 5" </code>
+
+***Ans:-***
+
+```python
+def find_needle(haystack):
+    # your code here
+    haystack = haystack.index("needle")
+    return f"found the needle at position {haystack}"
+```
