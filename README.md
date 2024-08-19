@@ -15,7 +15,7 @@
 
 <b><u>*Ans:-*<u></b>
 
-```bash
+```python
 def number_to_string(num):
     # Return a string of the number here!
     return str(num)
@@ -27,24 +27,26 @@ def number_to_string(num):
 
 ***Ans:-*** Below is the correct code.
 
-    def greet(name):
-    
-    if name == "Johnny":
-        return "Hello, my love!"
-    else:
-        return "Hello, {name}!".format(name=name)
-
+```python
+def greet(name):
+   if name == "Johnny":
+      return "Hello, my love!"
+   else:
+      return "Hello, {name}!".format(name=name)
+```
 
 **3. Complete the method that takes a boolean value and return a <code>"Yes"</code> string for <code>true</code>, or a <code>"No"</code> string <code>for</code> false.**
 
 ***Ans:-***
 
-    def bool_to_word(boolean):
-    # TODO
-    if boolean == True:
-        return "Yes"
-    else:
-        return "No"
+`````python
+def bool_to_word(boolean):
+   # TODO
+   if boolean == True:
+      return "Yes"
+   else:
+      return "No"
+`````
 
 
 **4. Create a function which answers the question "Are you playing banjo?".**
@@ -58,9 +60,32 @@ def number_to_string(num):
 
 ***Ans:-***
 
-    def are_you_playing_banjo(name):
-       # Implement me!
-       if name.startswith("R") or name.startswith("r"):
-           return name + " plays banjo"
-       else:
-           return name + " does not play banjo"
+```python
+def are_you_playing_banjo(name):
+   # Implement me!
+   if name.startswith("R") or name.startswith("r"):
+      return name + " plays banjo"
+   else:
+      return name + " does not play banjo"
+```
+
+**5. Consider an array/list of sheep where some sheep may be missing from their place. We need a function that counts the number of sheep present in the array (true means present).**
+
+**For example,**
+
+`````
+[True,  True,  True,  False,
+   True,  True,  True,  True ,
+   True,  False, True,  False,
+   True,  False, False, True ,
+   True,  True,  True,  True ,
+   False, False, True,  True]
+`````
+
+***Ans:-***
+
+`````python
+def count_sheeps(sheep):
+  # TODO May the force be with you
+    return sheep.count(True)
+`````
