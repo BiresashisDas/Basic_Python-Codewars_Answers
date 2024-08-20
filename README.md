@@ -150,7 +150,7 @@ def always(n=0):
 
 ```
 
-## * Sum Arrays*
+## *Sum Arrays*
 
 **9. Write a function that takes an array of numbers and returns the sum of the numbers. The numbers can be negative or non-integer. If the array does not contain any numbers then you should return 0.**
 
@@ -177,4 +177,30 @@ Output: <code>-2.398</code>
 ```python
 def sum_array(a):
     return sum(a)
+```
+
+## *Multiply*
+
+**10. This code does not execute properly. Try to figure out why.**
+
+***Ans:-*** Below is the correct code ⬇️
+
+```python
+def multiply(a, b):
+    return a * b
+```
+
+## *Surface Area and Volume of a Box*
+
+**11. Write a function that returns the total surface area and volume of a box as an array: <code>[area, volume]**</code>
+
+***Ans:-***
+
+```python
+def get_size(w,h,d):
+    #your code here
+    area = (2*(w*h)) + (2*(w*d)) + (2*(h*d))
+    volume = d * w * h
+    result = [area, volume]
+    return result
 ```
