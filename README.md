@@ -54,9 +54,9 @@ def bool_to_word(boolean):
 
 **The function takes a name as its only argument, and returns one of the following strings:**
 
->name + " plays banjo"
+>***name + " plays banjo"***
 >
->name + " does not play banjo"
+>***name + " does not play banjo"***
 
 ***Ans:-***
 
@@ -130,4 +130,22 @@ def find_needle(haystack):
     # your code here
     haystack = haystack.index("needle")
     return f"found the needle at position {haystack}"
+```
+
+**8. A function within a function**
+
+**Given an input n, write a function always that returns a function which returns n. Ruby should return a lambda or a proc.**
+
+>***three = always(3)***
+>
+>****three() /\* returns 3 \*/****
+
+***Ans***
+
+```python
+
+def always(n=0):
+    # ...
+    return lambda: n
+
 ```
