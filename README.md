@@ -109,7 +109,7 @@ def digitize(n):
     return [int(x) for x in n]
 ```
 
-# A Needle in the Haystack
+## *A Needle in the Haystack*
 
 **7. Can you find the needle in the haystack?**
 
@@ -132,15 +132,15 @@ def find_needle(haystack):
     return f"found the needle at position {haystack}"
 ```
 
-**8. A function within a function**
+## *A function within a function*
 
-**Given an input n, write a function always that returns a function which returns n. Ruby should return a lambda or a proc.**
+**8. Given an input n, write a function always that returns a function which returns n. Ruby should return a lambda or a proc.**
 
 >***three = always(3)***
 >
 >****three() /\* returns 3 \*/****
 
-***Ans***
+***Ans:-***
 
 ```python
 
@@ -148,4 +148,33 @@ def always(n=0):
     # ...
     return lambda: n
 
+```
+
+## * Sum Arrays*
+
+**9. Write a function that takes an array of numbers and returns the sum of the numbers. The numbers can be negative or non-integer. If the array does not contain any numbers then you should return 0.**
+
+**Examples**
+
+Input: <code>[1, 5.2, 4, 0, -1]</code>  
+Output: <code>9.2</code>
+
+Input: <code>[]</code>  
+Output: </code>0</code>
+
+Input: <code>[-2.398]</code>  
+Output: <code>-2.398</code>
+
+
+**Assumptions**
+
+- You can assume that you are only given numbers.
+- You cannot assume the size of the array.
+- You can assume that you do get an array and if the array is empty, return 0.
+
+***Ans:-***
+
+```python
+def sum_array(a):
+    return sum(a)
 ```
