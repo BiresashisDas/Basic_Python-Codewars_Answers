@@ -263,4 +263,10 @@ def two_decimal_places(n):
 ***Incorrect examples (e.g. if you round the numbers):***  
 <code>32.8493 is 32.85</code>  
 <code>14.3286 is 14.33</code>
+
+```python
+import math
+def two_decimal_places(number):
+    res = math.trunc(number * 100) / 100
+    return res
 ```
