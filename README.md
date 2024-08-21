@@ -249,3 +249,18 @@ def rps(p1, p2):
 def two_decimal_places(n):
     return round(n,2)
 ```
+
+## Formatting decimal places \#1
+
+**14. Each floating-point number should be formatted that only the first two decimal places are returned. You don't need to check whether the input is a valid number because only valid numbers are used in the tests.**
+
+**Don't round the numbers! Just cut them after two decimal places!**
+
+***Right examples:***    
+<code>32.8493 is 32.84</code>  
+<code>14.3286 is 14.32</code>
+
+***Incorrect examples (e.g. if you round the numbers):***  
+<code>32.8493 is 32.85</code>  
+<code>14.3286 is 14.33</code>
+```
