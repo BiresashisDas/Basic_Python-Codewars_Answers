@@ -256,11 +256,11 @@ def two_decimal_places(n):
 
 **Don't round the numbers! Just cut them after two decimal places!**
 
-***Right examples:***    
+*Right examples:*    
 <code>32.8493 is 32.84</code>  
 <code>14.3286 is 14.32</code>
 
-***Incorrect examples (e.g. if you round the numbers):***  
+*Incorrect examples (e.g. if you round the numbers):*  
 <code>32.8493 is 32.85</code>  
 <code>14.3286 is 14.33</code>
 
