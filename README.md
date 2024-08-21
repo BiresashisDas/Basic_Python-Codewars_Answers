@@ -71,7 +71,7 @@ def are_you_playing_banjo(name):
 
 **5. Consider an array/list of sheep where some sheep may be missing from their place. We need a function that counts the number of sheep present in the array (true means present).**
 
-**For example,**
+***For example,***
 
 `````
 [True,  True,  True,  False,
@@ -119,7 +119,7 @@ def digitize(n):
 
 **<code>"found the needle at position "</code> plus the <code>index</code> it found the needle, so:**
 
-**Example(Input --> Output)**
+***Example(Input --> Output)***
 
 <code>["hay", "junk", "hay", "hay", "moreJunk", "needle", "randomJunk"] --> "found the needle at position 5" </code>
 
@@ -154,7 +154,7 @@ def always(n=0):
 
 **9. Write a function that takes an array of numbers and returns the sum of the numbers. The numbers can be negative or non-integer. If the array does not contain any numbers then you should return 0.**
 
-**Examples**
+***Examples***
 
 Input: <code>[1, 5.2, 4, 0, -1]</code>  
 Output: <code>9.2</code>
@@ -204,3 +204,34 @@ def get_size(w,h,d):
     result = [area, volume]
     return result
 ```
+
+## *Rock Paper Scissors*
+
+**12. Let's play! You have to return which player won! In case of a draw return Draw!.**
+
+***Examples(Input1, Input2 --> Output):***
+
+```box
+"scissors", "paper" --> "Player 1 won!"
+"scissors", "rock" --> "Player 2 won!"
+"paper", "paper" --> "Draw!"
+```
+
+***Ans:-***
+
+```python
+def rps(p1, p2):
+    #your code here
+    
+    r = "rock"
+    p = "paper"
+    s = "scissors"
+    
+    if (p1 == r and p2 == r) or (p1 == p and p2 == p) or (p1 == s and p2 == s):
+        return "Draw!"
+    elif (p1 == r and p2 == p) or (p1 == s and p2 == r) or (p1 == p and p2 == s):
+        return "Player 2 won!"
+    elif (p1 == r and p2 == s) or (p1 == s and p2 == p) or (p1 == p and p2 == r):
+        return "Player 1 won!"
+```
+
