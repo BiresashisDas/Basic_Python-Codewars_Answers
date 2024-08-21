@@ -284,3 +284,11 @@ def two_decimal_places(number):
 - *with <code>size</code> 12 should return : <code>'101010101010'</code>.*
 
 - *The size will always be positive and will only use whole numbers.*
+
+  ***Ans:-***
+
+  ```python
+  def stringy(size):
+    # Good Luck!
+    return ('10' * size)[:size]
+  ```
