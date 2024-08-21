@@ -264,6 +264,8 @@ def two_decimal_places(n):
 <code>32.8493 is 32.85</code>  
 <code>14.3286 is 14.33</code>
 
+***Ans:-***
+
 ```python
 import math
 def two_decimal_places(number):
@@ -285,7 +287,7 @@ def two_decimal_places(number):
 
 - *The size will always be positive and will only use whole numbers.*
 
-  ***Ans:-***
+***Ans:-***
 
   ```python
   def stringy(size):
