@@ -294,3 +294,16 @@ def two_decimal_places(number):
     # Good Luck!
     return ('10' * size)[:size]
   ```
+
+
+
+def count_substring(string, sub_string):
+    count = set(sub_string).intersection(set(string))
+    print(len(count))
+
+if __name__ == '__main__':
+    string = input('Enter 1st string : ').strip()
+    sub_string = input('Enter 2nd string : ').strip()
+    
+    count = count_substring(string, sub_string)
+    print(count)
